@@ -1,0 +1,7 @@
+.container {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-rows: repeat(3 veces,100px); */
+    grid-template-rows: ;
+}
