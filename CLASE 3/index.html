@@ -2,13 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=
-    
-    
-    , initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
 
@@ -17,14 +11,102 @@
 
     <main>
       <h1>Formulario</h1>
-      
 
-        <form action="" method="post"></form>
+      <form
+        action="Link"
+        method="post"
+        target="_blank"
+        enctype="multipart/form-data"
+      >
+        <div>
+          <label for="identifica el elemento">Nombre:</label>
+          <!-- APARECE AL LADO DEL CAMPO ESA PALABRA "NOMBRE": -->
+          <input
+            type="text"
+            name="nombre"
+            id="identifica el elemento"
+            placeholder="indica que completar en campo"
+            maxlength="6"
+            value=""
+            required
+          />
+          <!-- APARECE CAMPO EN BLANCO PARA QUE ESCRIBA: -->
+          <label for="identifica">Apellido:</label>
+          <!-- APARECE AL LADO DEL CAMPO ESA PALABRA "NOMBRE": -->
+          <input
+            type="text"
+            name="apellido"
+            id="identifica"
+            placeholder="Perez"
+            maxlength="6"
+            value=""
+            readonly
+          />
+        </div>
+        <!-- el FOR  y el ID tienen que tener escrito lo mismo para vincularse, para que ese Label describe ese Input. El readonly es solo puede leer ese campo-->
 
+        <fieldset>
+          <!-- Fieldset separa x sección, enmarca, es estetico visual -->
+          <legend>PROBANDO INPUTS</legend>
+          <input type="date" name="" id="" /><!-- EL USUARIO ELIGE FECHA -->
+          <input type="email" name="" id="" /><!-- El usuario si o si @email -->
+          <input type="color" name="" id="" /><!-- elige color -->
+          <input type="file" name="archivo" id="" /><!-- Apara subir archivo -->
+          <input
+            type="password"
+            name=""
+            id=""
+          /><!-- lo que escribe se ve puntitos -->
+          <input type="url" name="" id="" placeholder="https://.." />
+          <input type="range" name="" id="" min="0" max="200" step="50" />
+          <!-- una barra que deslizas el punto. Tiene un min y un max  El step es que desliza cada 50 ene ste caso-->
+        </fieldset>
 
+        <div>
+          <input type="checkbox" name="" id="" /> <label for="">UNO</label>
+          <input type="checkbox" name="" id="" /> <label for="">DOS</label>
+          <input type="checkbox" name="" id="" /> <label for="">TRES</label>
+        </div>
+        <!-- Tildas, marcas mas de uno y tiene forma cuadrada-->
 
+        <div>
+          <input type="radio" name="eligo" id="" value="otro" />
+          <label for="">TRES</label>
+          <input type="radio" name="eligo" id="" value="html" />
+          <label for="">UNO</label>
+          <input type="radio" name="eligo" id="" value="css" />
+          <label for="">DOS</label>
+        </div>
 
+        <!-- Tildas, marcas mas de uno, tiene forma redonda. Pero si los "name" tienen mismo nombre, solo uno podes elegir. Aca el "value" no se ve, pero ademas de que en el form llegue "eligo" tambien ponga "html" p/ saber qué eligio el usuario-->
 
+        <div>
+          <label for="consulta">Consulta:</label>
+          <textarea
+            name="consultas"
+            id="consulta"
+            placeholder="Escribe tu consulta..."
+          >
+Escribe tu consulta borra esto..
+          </textarea>
+        </div>
+        <!-- UN CUADRO PARA QUE ESCRIBA TANTOS CARACTERES, DESARROLLE -->
+
+        <div>
+          <!-- Se desglozan opciones-->
+          <label for="opcion">Opciones:</label>
+          <select name="opciones" id="opcion">
+            <option value="1">Opcion 1</option>
+            <option value="2">Opcion 2</option>
+            <option value="3">Opcion 3</option>
+          </select>
+        </div>
+
+        <!-- <input type="submit" value="Enviar">  BOTON DE ENVIAR y este no usamos-->
+        <button type="submit">ENVIAR!!!!!</button>
+        <!--  USAMOS ESTE BOTON DE ENVIAR -->
+        <!-- <button type="reset">BORRAR</button> NO SE USA ES PELIGROSO -->
+      </form>
     </main>
 
     <footer>
