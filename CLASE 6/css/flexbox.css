@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  min-width: 90vw;
+  min-height: 70vh;
+  background-color: teal;
+  color: aquamarine;
+  display: flex; /* ESTA ES LA PROPIEDAD PARA LUEGO ELEGIR VARIEDAD ABAJO/ O inline-flex que lo que hace es que su contenedor no ocupe en bloque si no ocupa el ancho de lo que abarque el contenido */
+  /* justify-content: center; 
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0, 24px; */
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
+  align-content: space-evenly;
+  border: 1px solid black;
+  padding: 0.5em;
+}
+
+.item {
+  border: 1px solid black;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.item-1 {
+  background-color: blue;
+}
+
+.item-2 {
+  background-color: green;
+  width: 150px;
+}
+
+.item-3 {
+  background-color: red;
+  height: 170px;
+}
+
+.item-4 {
+  background-color: gold;
+  width: 100px;
+  height: 50px;
+}
+
+/* .item {
+  width: 100px;
+   height: 100px; 
+   background-color: bisque;
+  border: solid;
+} */
+
+/* .item-3 {
+  align-self: center;
+} */
