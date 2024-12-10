@@ -1,5 +1,5 @@
 * {
-  /* margin: 0; */
+  margin: 0; 
   box-sizing: border-box;
 }
 
@@ -13,23 +13,35 @@
 
 .parrafos {
   color: blue;
-} */
+}  */
 
-h1,
-h2 {
+/*
+h1, h2 {
   border: 2px solid violet;
   font-family: "Courier New", Courier, monospace;
-}
-
-/* section > p {
+}*/
+/*
+section p {
   color: green;
-} */
-
-/* h2 ~ p {
+}*/ /* las p dentro de section directa o no directamente*/
+/*
+ section > p {
+  color: rgb(0, 119, 128);
+}  */ /* si o si directo de section, adentro de este*/
+/*
+ h2 ~ p {
   color: red;
 } */
+/* no esta inmediatamente despues la p de h2, pero esta en mismo contenedor que h2*/
+/*
+h2 + p {
+  color: rgb(236, 9, 9);
+} *//* si despues de h2 viene directo ( no adentro) un p, a esa p le da color*/
 
-h1 {
+/*
+h2 + h3 + p {
+  color: red;
+} /*viene un h2, le sigue h3 y luego al p que sigue se aplica */ /* {
   width: 300px;
   height: 100px;
   background-color: lightgreen;
@@ -37,13 +49,13 @@ h1 {
   border-bottom: 5px dotted cadetblue;
   border-radius: 5px;
   text-align: center;
-}
+}*/
 
 h2 {
   width: 30%;
   background-color: red;
-  overflow: hidden;
-  border: solido;
+  overflow: hidden; /* OCULTO LO QUE SOBRESALE DEL CONTENEDOR*/
+  border: 2px solid violet;
 }
 
 h3 {
@@ -52,5 +64,20 @@ h3 {
 
 p {
   margin: 0;
-  margin-bottom: 1em;
+  margin-bottom: 20em;
 }
+
+
+/* p {
+  margin: 1em 2em 3px 20%;;
+} */
+
+h1 {
+  width: 50vw ;
+  background-color: red;
+  padding: 1em;
+  border: 6px dotted violet;
+  border-radius: 6px;
+}
+
+

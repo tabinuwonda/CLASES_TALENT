@@ -1,7 +1,26 @@
 .container {
-    height: 50vh;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3 veces, 100px);
+  /* grid-template-rows: */
+  column-gap: 1em;
+  row-gap: 2em;
+  gap: 1em 4em; /* SI USO MARGIN O PADDING en justify content o align-content,y demas no tiene en cuenta sos espacios, en cambio el GAP si lo suma a su distribucion*/
+  justify-content: center; /*alinea columna*/
+  align-content: center; /*alinea filas*/
+}
+
+/* .container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    /* grid-template-rows: repeat(3 veces,100px); */
-    grid-template-rows: ;
+    grid-template-columns:20% 40% 60%;
+ } */
+
+.item-1 {
+  /* grid-column-start: 2;
+  grid-column-end: 4; */
+  /*grid-column: 2/4;  es lo mimso que el anterior*/
+  grid-column: 2 / span 2; /*es lo mismo que ambos dos anteriores*/
+  grid-row: 2 / span 4;
+  background-color: red;
 }
